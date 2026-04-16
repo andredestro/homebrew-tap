@@ -15,10 +15,7 @@ class CordovaZshPlugin < Formula
     <<~EOS
       To activate the plugin, add the following to your ~/.zshrc:
 
-        source "#{share}/cordova-zsh-plugin/cordova.plugin.zsh"
-
-      Tab completion is installed to:
-        #{share}/zsh/site-functions/_cordova
+        source "#{HOMEBREW_PREFIX}/share/cordova-zsh-plugin/cordova.plugin.zsh"
 
       If completion is not working, rebuild the zsh compdump cache:
         rm -f ~/.zcompdump && exec zsh
